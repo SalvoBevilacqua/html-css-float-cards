@@ -12,6 +12,7 @@ img {
 
 body {
     font-family: 'Fredoka', sans-serif;
+    color: white;
 }
 
 header {
@@ -23,6 +24,7 @@ header {
 }
 
 .paragraph {
+    color: black;
     width: 67%;
     font-size: 1.1rem;
     margin: 0 auto;
@@ -30,8 +32,45 @@ header {
     padding-bottom: 3rem;
 }
 
-.float_container {
+.container {
     width: 67%;
     margin: 0 auto;
-    border: 2px solid black;
+}
+
+.col {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 15px;
+    text-align: left;
+}
+
+.card {
+    background-color: rgb(24, 24, 24);
+    height: 100px;
+}
+
+.col img {
+    float: left;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.mail {
+    color: rgb(41, 151, 241);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 2rem;
+}
+
+.text {
+    height: 100%;
+    padding: 3px 0;
+}
+
+.name, .job, .mail {
+    padding-top: 0.4rem;
 }
